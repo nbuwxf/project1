@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>学习</title>
+		<link rel="stylesheet" href="css/index.css">
+		<style>
+			.div1 {
+				position: absolute;
+				top: 50px;
+				left: 10px;
+				width: 200px;
+				height: 200px;
+				background-color: aqua;
+			}
+
+			span {
+				position: absolute;
+				top: 310px;
+				left: 10px;
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+			}
+		</style>
+		<script src='js/jquery.js'></script>
+		<script src="js/animation.js"></script>
+	</head>
+	<body>
+		<button class="btn500">点我移动到500</button>
+		<button class="btn800">点我移动到800</button>
+		<div class='div1'></div>
+		<span></span>
+
+		<button class='save' name='2'>保存</button>
+
+		<script>
+			$(function() {
+				$('.save').show();
+			})
+			var save = document.querySelector('.save');
+			save.addEventListener('click', function() {
+				console.log(save.name);
+				window.sessionStorage.setItem('key1', 'wangxiaofeng');
+				window.localStorage.setItem('key1', 'wangxiaofeng');
+			})
+			save.addEventListener('click', function(e) {
+				var b = $('.btn500');
+				b.toggle();
+				this.name = sessionStorage.getItem('key1');
+				console.log(save.name);
+			})
+		</script>
+	</body>
+</html>

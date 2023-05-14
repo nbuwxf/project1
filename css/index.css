@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: beige;
+}
+
+section {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.tags {
+	padding: 3px;
+	display: flex;
+
+}
+
+li {
+	flex: 1;
+	list-style: none;
+}
+
+.tags .tag_hb:nth-child(1) {
+	background-color: purple;
+}
+
+.items .tag_item {
+	display: none;
+}
+
+.items .tag_item:nth-child(1) {
+	display: block;
+}

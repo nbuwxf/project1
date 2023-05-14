@@ -1,0 +1,28 @@
+* {
+	margin: 0;	
+	padding: 0;
+}
+
+ul {
+	margin: 100 auto;
+}
+ul li {
+	list-style: none;
+	width: 80px;
+	height: 40px;
+	margin-right: 5px;
+}
+.box{
+	width: 100%;
+	height: 100%;
+}
+.box .front{
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+}
+.box .bottom{
+	width: 100%;
+	height: 100%;
+	background-color: purple;
+}
